@@ -1,0 +1,201 @@
+/* portfolio area css */
+
+
+.portfolio-area {
+	
+
+	.section-title {
+	    display: inline-block;
+	}
+
+	.portfolio-menu-area {
+	    display: inline-block;
+	    float: right;
+        padding-top: 22px;
+	}
+	ul.portfolio-menu {
+	    margin-bottom: 0px;
+	    
+	    > li{
+	    	position: relative;
+			height: auto ;
+	 		display: inline-block;
+		    font-size: 16px;
+		    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+		    cursor: pointer;
+		    margin: 0px 20px;
+		    -webkit-transition: all .2s;
+		    transition: all .2s;
+		    color: #898989;
+			text-transform: capitalize;
+		    &:before {
+			    content: '';
+			    display: block;
+			    width: 0;
+			    height: 1px;
+			    background: #a58f60;
+			    -webkit-transition: width .3s;
+			    -o-transition: width .3s;
+			    transition: width .3s;
+			    bottom: -1px;
+			    position: absolute;
+			    left: 0;
+			}
+
+			&:hover{
+				color: #a58f60;
+			}
+
+			&:hover::before{
+				width: 100%;
+			}
+	    }
+	    li.active{
+	    	color: #a58f60 !important;
+	    }
+	    li.active:before {
+		    background: #a58f60 !important;
+		    width: 100% !important; 
+		}
+	}
+
+	.portfolio_container{
+		.all-folio{
+			margin-top: 45px;
+		    margin-left: -15px;
+   			margin-right: -15px;
+			.col-md-4 {
+			   width: 50%;
+			   padding:15px;
+			   .single-folio {
+			   		position:relative;
+				   display: block;
+				   width: 100%;
+				   img {
+					   width: 100%;
+					   display: block !important;
+					}
+					 .folio-hvr {
+					     position: absolute;
+					     visibility: hidden;
+					     opacity: 0;
+					     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+					     text-align: center;
+					     -webkit-transition: all 0.4s ease 0s;
+					     transition: all 0.4s ease 0s;
+					     left: 0;
+					     top: 0;
+					     width: 100%;
+					     height: 100%;
+					     border:15px solid transparent;
+					     z-index: 1;
+					     &::after {
+						    position: absolute;
+						    content: "";
+						    background: #a58f60;
+						    width: 100%;
+						    height: 100%;
+						    left: 0;
+						    top: 0;
+						    z-index: -1;
+						    opacity: .8;
+						}
+					     img {
+						    max-width: 100%;
+						    display: block !important;
+						}
+
+						.folio-image-container {
+						    position: absolute;
+						    width: 75px;
+						    top: 50%;
+						    left: 50%;
+						    transform: translate(-50%, -50%);
+						}
+					}
+					&:hover .folio-hvr{
+					    bottom: 0;
+					    opacity: 1;
+					    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+					    visibility: visible;
+					}
+					.single-folio-content{
+						position:relative;
+					}
+				}
+				.single-folio-info {
+				    padding: 10px 0px 0px 0px;
+				    h3 {
+					    font-size: 20px;
+					    margin-top: 10px;
+					    line-height: 1;
+					    padding-bottom: 0px;
+					    a {
+						    color: #898989;
+						}
+					}
+				}
+
+				.terms > a {
+				    font-size: 14px;
+				    color: #898989;
+				    position: relative;
+					height: auto ;
+			 		display: inline-block;
+				    -webkit-transition: all .2s;
+				    transition: all .2s;
+				    color: #898989;
+					text-transform: capitalize;
+					&:before {
+					    content: '';
+					    display: block;
+					    width: 0;
+					    height: 1px;
+					    background: #a58f60;
+					    -webkit-transition: width .3s;
+					    -o-transition: width .3s;
+					    transition: width .3s;
+					    bottom: -1px;
+					    position: absolute;
+					    left: 0;
+					}
+					&:hover::before{
+						width: 100%;
+					}
+					&:hover{
+						color: #a58f60;
+					}
+				}
+			}
+		}
+	}
+}
+
+// single-portfolio-page
+
+section.singlepage-container {
+    padding: 75px 0px;
+    .left-sidebar {
+        float: left;
+	    width: 66.66666667%;
+	    padding: 0px 15px;
+	    .left-sidebar-title{
+	    	margin-bottom: 35px;
+	    	h1 {
+			    font-size: 39px;
+			}
+    	} 
+	}
+	.right-sidebar {
+	    float: left;
+	    width: 33.33333333%;
+        padding: 0px 15px;
+        .single-right-sidebar{
+        	margin-bottom: 35px;
+			h3 {
+			    font-size: 24px;
+			    padding-bottom: 30px;
+			}
+        }	 
+	}
+}
