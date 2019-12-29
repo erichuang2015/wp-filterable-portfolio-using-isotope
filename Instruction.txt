@@ -1,5 +1,9 @@
+wordpress filterable portfolio using isotope.
+
 Install cpt and advanced custom fields plugins install. 
 
-post_type=portfolios
-taxonomy=portfolio_categories
-taxonomy=portfolio_tag
+post_type=portfolios.
+taxonomy=portfolio_categories.
+taxonomy=portfolio_tag.
+
+use [portfolio].
